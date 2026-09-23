@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #c9a45c;
+  --color-gold-soft: #e1c98a;
+  --color-gold-muted: #cbb98a;
+  --color-black: #050505;
+  --font-brand: var(--font-cinzel);
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-cormorant);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: var(--color-gold);
+}
+
+.silk-bg {
+  background:
+    radial-gradient(ellipse 70% 45% at 78% 18%, rgba(201, 164, 92, 0.1), transparent 58%),
+    radial-gradient(ellipse 55% 40% at 12% 88%, rgba(255, 255, 255, 0.035), transparent 55%),
+    linear-gradient(165deg, #161616 0%, #0a0a0a 32%, #000 68%, #101010 100%);
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.85rem 1.7rem;
+  background: #c9a45c;
+  color: #0a0a0a;
+  font-family: var(--font-cinzel);
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-gold:hover {
+  background: #e1c98a;
+}
+
+.btn-gold-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.85rem 1.7rem;
+  border: 1px solid #c9a45c;
+  color: #c9a45c;
+  font-family: var(--font-cinzel);
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-gold-outline:hover {
+  background: #c9a45c;
+  color: #0a0a0a;
+}
+
+.hero-frame {
+  box-shadow: 0 0 0 1px rgba(201, 164, 92, 0.18);
+}
+
+::selection {
+  background: #c9a45c;
+  color: #000;
+}
