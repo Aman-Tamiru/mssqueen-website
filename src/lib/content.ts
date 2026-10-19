@@ -24,6 +24,7 @@ export const contact = {
 export const nav = [
   { href: "/", label: "Home" },
   { href: "/collection", label: "Collection" },
+  { href: "/custom-design", label: "Custom Design" },
   { href: "/about", label: "About" },
   { href: "/authenticity", label: "Authenticity" },
   { href: "/contact", label: "Contact" },
